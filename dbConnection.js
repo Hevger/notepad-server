@@ -1,7 +1,7 @@
 const dotenv = require("dotenv");
 dotenv.config();
 const mongodb = require("mongodb");
-console.log(process.env.MONGO_URI);
+console.log(process.env);
 mongodb.connect(
   process.env.MONGO_URI,
   { useNewUrlParser: true, useUnifiedTopology: true },
